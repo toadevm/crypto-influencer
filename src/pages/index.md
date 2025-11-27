@@ -113,7 +113,7 @@ hide_table_of_contents: true
       </div>
       <div className="card__body">
         <p>See real scam examples and understand why this matters</p>
-        <a href="/docs/problem/trust-crisis" className="button button--primary button--block">View the Crisis</a>
+        <a href="docs/problem/trust-crisis" className="button button--primary button--block">View the Crisis</a>
       </div>
     </div>
   </div>
@@ -125,7 +125,7 @@ hide_table_of_contents: true
       </div>
       <div className="card__body">
         <p>Learn how verification protects all parties</p>
-        <a href="/docs/solution/how-it-works" className="button button--primary button--block">How It Works</a>
+        <a href="docs/solution/how-it-works" className="button button--primary button--block">How It Works</a>
       </div>
     </div>
   </div>
@@ -137,7 +137,7 @@ hide_table_of_contents: true
       </div>
       <div className="card__body">
         <p>Understand the market and business model</p>
-        <a href="/docs/opportunity/market-size" className="button button--primary button--block">View Opportunity</a>
+        <a href="docs/opportunity/market-size" className="button button--primary button--block">View Opportunity</a>
       </div>
     </div>
   </div>
@@ -148,8 +148,8 @@ hide_table_of_contents: true
         <h4>🎯 Our Goals</h4>
       </div>
       <div className="card__body">
-        <p>See what we're aiming for in this startup</p>
-        <a href="/docs/opportunity/goals" className="button button--primary button--block">View Goals</a>
+        <p>See what we're aiming for</p>
+        <a href="docs/opportunity/goals" className="button button--primary button--block">View Goals</a>
       </div>
     </div>
   </div>
@@ -162,7 +162,7 @@ hide_table_of_contents: true
     <h2 className="hero__title">Ready to Learn More?</h2>
     <p className="hero__subtitle">Start with our overview to understand the full opportunity</p>
     <div>
-      <a className="button button--primary button--lg" href="/docs/overview">View Full Documentation →</a>
+      <a className="button button--primary button--lg" href="docs/overview">View Full Documentation →</a>
     </div>
   </div>
 </div>
