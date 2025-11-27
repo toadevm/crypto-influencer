@@ -148,7 +148,7 @@ hide_table_of_contents: true
         <h4>🎯 Our Goals</h4>
       </div>
       <div className="card__body">
-        <p>See what we're aiming for</p>
+        <p>See what we're aiming for in our goals</p>
         <a href="docs/opportunity/goals" className="button button--primary button--block">View Goals</a>
       </div>
     </div>
