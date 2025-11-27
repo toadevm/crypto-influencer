@@ -1,0 +1,270 @@
+/**
+ * Crypto Influencer Platform - Professional Dark Mode Styling
+ * Optimized for investor-focused technical documentation
+ */
+
+/* Light mode (minimal use - most users will see dark mode) */
+:root {
+  --ifm-color-primary: #0052ff;
+  --ifm-color-primary-dark: #0049e6;
+  --ifm-color-primary-darker: #0045d9;
+  --ifm-color-primary-darkest: #0038b3;
+  --ifm-color-primary-light: #1a65ff;
+  --ifm-color-primary-lighter: #3377ff;
+  --ifm-color-primary-lightest: #4d85ff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-background-color: #ffffff;
+}
+
+/* Dark mode - Crypto-native professional styling */
+[data-theme='dark'] {
+  /* Primary brand colors - Softer navy blue (easier on eyes) */
+  --ifm-color-primary: #5b8def;
+  --ifm-color-primary-dark: #4680eb;
+  --ifm-color-primary-darker: #3c7ae9;
+  --ifm-color-primary-darkest: #2563d9;
+  --ifm-color-primary-light: #7099f2;
+  --ifm-color-primary-lighter: #85a6f4;
+  --ifm-color-primary-lightest: #a8c0f7;
+
+  /* Secondary colors */
+  --ifm-color-secondary: #4680eb;      /* Navy blue - professional */
+  --ifm-color-success: #00d395;        /* Green - verified/secure */
+  --ifm-color-info: #54c7ec;
+  --ifm-color-warning: #ffc107;
+  --ifm-color-danger: #ff3366;
+
+  /* Background colors - Deep navy theme */
+  --ifm-background-color: #0a0e27;
+  --ifm-background-surface-color: #12172e;
+  --ifm-navbar-background-color: #0a0e27;
+  --ifm-footer-background-color: #060814;
+  --ifm-card-background-color: #12172e;
+
+  /* Text colors */
+  --ifm-font-color-base: #e4e4e7;
+  --ifm-heading-color: #ffffff;
+  --ifm-color-content-secondary: #a1a1aa;
+  --ifm-link-color: #5b8def;
+  --ifm-link-hover-color: #85a6f4;
+
+  /* Code blocks */
+  --ifm-code-background: #1a1f3a;
+  --docusaurus-highlighted-code-line-bg: rgba(91, 141, 239, 0.1);
+
+  /* Borders */
+  --ifm-color-emphasis-300: #2a2f4a;
+  --ifm-hr-background-color: #2a2f4a;
+  --ifm-toc-border-color: #2a2f4a;
+}
+
+/* Hero gradient effect - Dark mode */
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+}
+
+/* Hero Light mode */
+[data-theme='light'] .hero {
+  background: transparent;
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  padding-left: 2rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Dark mode - add subtle shadow and left border */
+[data-theme='dark'] .hero--dark {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.hero__title {
+  background: linear-gradient(90deg, #4680eb 0%, #85a6f4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 3.5rem;
+  font-weight: 800;
+}
+
+/* Architecture cards */
+.architecture-card {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 12px;
+  padding: 2rem;
+  margin: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.architecture-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(91, 141, 239, 0.2);
+  border-color: var(--ifm-color-primary-light);
+}
+
+/* Feature boxes */
+.feature-box {
+  background: var(--ifm-card-background-color);
+  border-left: 4px solid var(--ifm-color-primary);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+/* Admonitions - professional styling */
+.admonition {
+  border-radius: 8px;
+  border-left-width: 4px;
+}
+
+[data-theme='dark'] .admonition-note {
+  background-color: rgba(91, 141, 239, 0.1);
+  border-color: #5b8def;
+}
+
+[data-theme='dark'] .admonition-tip {
+  background-color: rgba(0, 211, 149, 0.1);
+  border-color: #00d395;
+}
+
+[data-theme='dark'] .admonition-warning {
+  background-color: rgba(255, 193, 7, 0.1);
+  border-color: #ffc107;
+}
+
+[data-theme='dark'] .admonition-danger {
+  background-color: rgba(255, 51, 102, 0.1);
+  border-color: #ff3366;
+}
+
+/* Tables - improved readability */
+[data-theme='dark'] table {
+  border-color: var(--ifm-color-emphasis-300);
+}
+
+[data-theme='dark'] th {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+[data-theme='dark'] tr:hover {
+  background-color: rgba(91, 141, 239, 0.05);
+}
+
+/* Sidebar - enhanced visibility */
+[data-theme='dark'] .menu__link {
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme='dark'] .menu__link--active {
+  background-color: rgba(91, 141, 239, 0.15);
+  color: var(--ifm-color-primary);
+  border-left: 3px solid var(--ifm-color-primary);
+}
+
+[data-theme='dark'] .menu__link:hover {
+  background-color: rgba(91, 141, 239, 0.1);
+  color: var(--ifm-color-primary-light);
+}
+
+/* Code blocks - professional appearance */
+[data-theme='dark'] pre {
+  background-color: #1a1f3a;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+[data-theme='dark'] code {
+  background-color: rgba(91, 141, 239, 0.1);
+  color: #5b8def;
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+}
+
+/* Navbar - enhanced styling */
+[data-theme='dark'] .navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer - professional appearance */
+[data-theme='dark'] .footer {
+  background-color: var(--ifm-footer-background-color);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+/* Buttons and CTAs */
+.button--primary {
+  background: #5b8def;
+  border: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  background: #7099f2;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(91, 141, 239, 0.3);
+}
+
+/* Responsive design improvements */
+@media screen and (max-width: 996px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .architecture-card {
+    padding: 1.5rem;
+  }
+}
+
+/* Custom scrollbar for dark mode */
+[data-theme='dark'] ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-primary);
+  border-radius: 5px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary-light);
+}
+
+/* Mermaid diagrams - dark mode optimization */
+[data-theme='dark'] .mermaid {
+  background-color: transparent;
+  filter: brightness(1.2);
+}
+
+/* Card height consistency - Only for cards in columns */
+.col--4 > .card,
+.col--3 > .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.col--4 > .card > .card__body,
+.col--3 > .card > .card__body {
+  flex-grow: 1;
+}
+
+/* Ensure columns stretch to match row height */
+.row > .col--4,
+.row > .col--3 {
+  display: flex;
+  flex-direction: column;
+}
